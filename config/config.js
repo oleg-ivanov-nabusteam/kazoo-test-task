@@ -21,17 +21,17 @@
                     voip: {
                         label: 'Hosted PBX',
                         icon: 'phone',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     },
                     pbxs: {
                         label: 'PBX Connector',
                         icon: 'device',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     },
                     numbers: {
                         label: 'Number Manager',
                         icon: 'menu1',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     }
                 },
                 available_apps: ['voip', 'cluster', 'userportal', 'accounts', 'developer', 'numbers', 'pbxs'],
@@ -42,17 +42,17 @@
                     voip: {
                         label: 'Hosted PBX',
                         icon: 'phone',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     },
                     accounts: {
                         label: 'Accounts',
                         icon: 'account',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     },
                     numbers: {
                         label: 'Number Manager',
                         icon: 'menu1',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     }
                 },
                 available_apps: ['voip', 'cluster', 'userportal', 'accounts', 'developer', 'numbers', 'pbxs'],
@@ -63,12 +63,12 @@
                     voip: {
                         label: 'Hosted PBX',
                         icon: 'phone',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     },
                     numbers: {
                         label: 'Number Manager',
                         icon: 'menu1',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     }
                 },
                 available_apps: ['voip', 'cluster', 'userportal', 'accounts', 'developer', 'numbers', 'pbxs'],
@@ -79,12 +79,12 @@
                     voip: {
                         label: 'Hosted PBX',
                         icon: 'phone',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     },
                     numbers: {
                         label: 'Number Manager',
                         icon: 'menu1',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     }
                 },
                 available_apps: ['voip', 'cluster', 'userportal', 'accounts', 'developer', 'numbers', 'pbxs'],
@@ -95,12 +95,12 @@
                     developer: {
                         label: 'Developer Tool',
                         icon: 'connectivity',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     },
                     numbers: {
                         label: 'Number Manager',
                         icon: 'menu1',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     }
                 },
                 available_apps: ['voip', 'cluster', 'userportal', 'accounts', 'developer', 'numbers', 'pbxs'],
@@ -111,12 +111,12 @@
                     pbxs: {
                         label: 'PBX Connector',
                         icon: 'device',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     },
                     numbers: {
                         label: 'Number Manager',
                         icon: 'menu1',
-                        api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                        api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
                     }
                 },
                 available_apps: ['voip', 'cluster', 'userportal', 'accounts', 'developer', 'numbers', 'pbxs'],
@@ -153,17 +153,17 @@
             cluster: {
                label: 'Cluster Manager',
                icon: 'cluster_manager',
-               api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+               api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
             },
             voip: {
                 label: 'Trial PBX',
                 icon: 'phone',
-                api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
             },
             accounts: {
                 label: 'Accounts',
                 icon: 'account',
-                api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1'
+                api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1'
             }
         },
 
@@ -229,7 +229,7 @@
 
     winkstart.apps = {
         'auth' : {
-            api_url: 'https://api.zswitch.net:8443/v1' //'https://api.zswitch.net:8443/v1',
+            api_url: 'http://dev.qualivoip.nl:8000/v1' //'https://api.zswitch.net:8443/v1',
             /* These are some settings that are set automatically. You are free to override them here.
             account_id: null,
             auth_token: null,
