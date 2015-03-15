@@ -5,11 +5,11 @@ var test_task = function() {
 	var accountName = 'oleg';
 	var accountId = '208064f16b0a1aa4791028dfd572ef97';
 	
-	var getAccountsDescendants = function(authToken) {
+	var getAccounts = function(authToken) {
 		
 		return $.ajax({
 			type: 'GET',
-			url: 'http://dev.qualivoip.nl:8000/v1/accounts/' + accountId + '/descendants?auth_token=' + authToken
+			url: 'http://dev.qualivoip.nl:8000/v1/accounts/' + accountId + '?auth_token=' + authToken
 		}).pipe(function(data) {
 			return data.data;
 		});
@@ -45,10 +45,13 @@ var test_task = function() {
 	var handleInit = function() {
 		
 		$('#amount-of-users-button').live('click', function () {
-			getAuthToken().pipe(getAccountsDescendants).done(function(accounts) {
-				var accountNumber = accounts.length + 1;
+			getAuthToken().pipe(getAccounts).done(function(data) {
+				var accountNumber = data.descendants_count + 1;
 				$('#ws-content').empty().append('<h3>Amount of users on the platform: ' + accountNumber + '<h3>');
 			})
+		});
+		
+		$('#list-of-realms-button').live('click', function () {
 		});
 	};
 
