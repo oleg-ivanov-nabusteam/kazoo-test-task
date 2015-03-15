@@ -33,10 +33,10 @@ var test_task = function() {
 						account_name: accountName
 					}
 				})
-				}).pipe(function(data) {
-					authToken = data.auth_token;
-					return data.auth_token;
-				});
+			}).pipe(function(data) {
+				authToken = data.auth_token;
+				return data.auth_token;
+			});
 		}
 		
 		return deferred.promise();
