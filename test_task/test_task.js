@@ -46,7 +46,7 @@ var test_task = function() {
 		
 		$('#amount-of-users-button').live('click', function () {
 			getAuthToken().pipe(getAccountsDescendants).done(function(accounts) {
-				$('#ws-content').empty().append('<h3>Amount of users on the platform: ' + accounts.length + 1 '<h3>');
+				$('#ws-content').empty().append('<h3>Amount of users on the platform: ' + accounts.length + 1 + '<h3>');
 			})
 		});
 	};
