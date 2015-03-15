@@ -1,6 +1,7 @@
 var test_task = function() {
 	
 	var credentials = '426cd6eb80f06113d3605e237cd8e76f';
+	var authToken;
 	var accountName = 'oleg';
 	var accountId = '208064f16b0a1aa4791028dfd572ef97';
 	
@@ -15,20 +16,30 @@ var test_task = function() {
 	};
 	
 	var getAuthToken = function() {
-	
-		return $.ajax({
-			type: 'PUT',
-			url: 'http://dev.qualivoip.nl:8000/v1/user_auth',
-			contentType: 'application/json',
-			data: JSON.stringify({
-				data: {
-					credentials: credentials,
-					account_name: accountName
-				}
-			})
-		}).pipe(function(data) {
-			return data.auth_token;
-		});
+		
+		var deferred;
+		
+		if (authToken !== undefined) {
+			deferred = $.Deferred();
+			deferred.resolve(authToken);
+		} else {
+			deferred = $.ajax({
+				type: 'PUT',
+				url: 'http://dev.qualivoip.nl:8000/v1/user_auth',
+				contentType: 'application/json',
+				data: JSON.stringify({
+					data: {
+						credentials: credentials,
+						account_name: accountName
+					}
+				})
+				}).pipe(function(data) {
+					authToken = data.auth_token;
+					return data.auth_token;
+				});
+		}
+		
+		return deferred.promise();
 	};
 	
 	var handleInit = function() {
