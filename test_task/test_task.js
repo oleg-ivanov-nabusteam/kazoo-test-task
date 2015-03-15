@@ -62,13 +62,13 @@ var test_task = function() {
 		});
 		
 		$('#list-of-realms-button').live('click', function () {
-			var listOfRealmsInUse = '<h2>List of realms in use:' + '</h2>';
+			var listOfRealmsInUse = '<h2>List of realms in use: </h2>';
 			
-			$.when(getAuthToken().pipe(getAccounts), getAuthToken().pipe(getAccountsDescendants)).then(function(account, accounts) {
-				listOfRealmsInUse += '<h3>' + account.realm + '</h3>'
+			$.when(getAuthToken().pipe(getAccounts), getAuthToken().pipe(getAccountsDescendants)).then(function(rootAccount, accounts) {
+				listOfRealmsInUse += '<h3>' + rootAccount.realm + '</h3>'
 				
-				$.each(accounts, function(index, acc) {
-					listOfRealmsInUse += '<h3>' + acc.realm + '</h3>';
+				$.each(accounts, function(index, account) {
+					listOfRealmsInUse += '<h3>' + account.realm + '</h3>';
 				});
 				
 				$('#ws-content').empty().append(listOfRealmsInUse);
